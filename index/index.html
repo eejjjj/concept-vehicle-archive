@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concept Vehicle Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/vendor/three/build/three.module.js",
+      "three/addons/": "/vendor/three/examples/jsm/"
+    }
+  }
+  </script>
+  <script>
+    if (location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var n = document.createElement('div');
+        n.id = 'file-protocol-warning';
+        n.textContent = '请用本地服务器预览（不能直接双击 HTML）。终端运行: bash preview.sh  然后打开 http://localhost:8765/index/';
+        document.body.prepend(n);
+      });
+    }
+  </script>
+</head>
+<body class="is-intro">
+
+  <section class="entrance" id="entrance" aria-label="Archive entrance">
+    <canvas class="intro-canvas" id="intro-canvas" aria-hidden="true"></canvas>
+  </section>
+
+  <div class="transition" id="transition"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="/index/" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="/assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <p class="site-intro-label" id="site-intro-label">Concept Vehicle Archive</p>
+  </header>
+
+  <footer class="site-footer">
+    Copyright © 2024 Segway-Ninebot. All rights reserved.
+  </footer>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/motion.js"></script>
+  <script type="module" src="/js/intro-three.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

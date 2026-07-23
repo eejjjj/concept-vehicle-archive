@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog — Concept Vehicle Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../js/base.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    if (location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var n = document.createElement('div');
+        n.id = 'file-protocol-warning';
+        n.textContent = '请用本地服务器预览（不能直接双击 HTML）。终端运行: bash preview.sh';
+        document.body.prepend(n);
+      });
+    }
+  </script>
+</head>
+<body class="is-archive is-catalog" data-page="catalog">
+
+  <div class="transition" id="transition"></div>
+
+  <div class="catalog-space" id="catalog-space">
+    <canvas class="catalog-space__stars" id="catalog-stars" aria-hidden="true"></canvas>
+    <canvas class="catalog-space__scene" id="catalog-canvas" aria-label="Catalog space — drag to look around"></canvas>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <a href="../" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="../assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../catalog/" id="nav-catalog" class="is-active" aria-current="page">Catalog</a>
+      <a href="../status/" id="nav-status">Status</a>
+      <a href="../access/" id="nav-access">Access</a>
+    </nav>
+  </header>
+
+  <footer class="site-footer">
+    Copyright © 2024 Segway-Ninebot. All rights reserved.
+  </footer>
+
+  <div class="shell page is-visible" id="page">
+    <main class="archive-main catalog-main" aria-label="Vehicle catalog"></main>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/motion.js"></script>
+  <script src="../js/catalog-stars.js"></script>
+  <script type="module" src="../js/catalog-space.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

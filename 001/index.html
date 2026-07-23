@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>001 — Concept Vehicle Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../js/base.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="is-archive" data-page="detail" data-slug="001">
+
+  <div class="transition" id="transition"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="../" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="../assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../catalog/" id="nav-catalog">Catalog</a>
+      <a href="../status/" id="nav-status">Status</a>
+      <a href="../access/" id="nav-access">Access</a>
+    </nav>
+  </header>
+
+  <footer class="site-footer">
+    Copyright © 2024 Segway-Ninebot. All rights reserved.
+  </footer>
+
+  <div class="detail-shell">
+    <main>
+      <div class="detail-body detail-body--001" id="detail-body">
+        <div class="detail-stage">
+          <div class="detail-visual detail-visual--book">
+            <span class="detail-regmark detail-regmark--tl" aria-hidden="true"></span>
+            <span class="detail-regmark detail-regmark--tr" aria-hidden="true"></span>
+            <span class="detail-regmark detail-regmark--bl" aria-hidden="true"></span>
+            <span class="detail-regmark detail-regmark--br" aria-hidden="true"></span>
+            <canvas class="detail-visual__canvas" id="book-canvas" aria-label="Interactive 3D book"></canvas>
+          </div>
+
+          <div class="detail-copy detail-copy--wire">
+            <p class="detail-index" id="detail-index">01 / 09</p>
+            <h1 class="detail-title" id="detail-title">—</h1>
+            <p class="detail-year" id="detail-year">—</p>
+            <p class="detail-tagline" id="detail-tagline"></p>
+            <p class="detail-desc" id="detail-desc"></p>
+            <div class="detail-tags" id="detail-tags"></div>
+            <div class="detail-specs detail-specs--inline" id="detail-specs"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/motion.js"></script>
+  <script type="module" src="../js/book-three.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

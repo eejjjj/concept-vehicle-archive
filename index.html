@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concept Vehicle Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/build/three.module.js",
+      "three/addons/": "./vendor/three/examples/jsm/"
+    }
+  }
+  </script>
+  <script>
+    if (location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var n = document.createElement('div');
+        n.id = 'file-protocol-warning';
+        n.textContent = '请用本地服务器预览（不能直接双击 index.html）。终端运行: python3 -m http.server 8765  然后打开 http://localhost:8765/index.html?reset=1';
+        document.body.prepend(n);
+      });
+    }
+  </script>
+</head>
+<body class="is-intro">
+
+  <!-- 一级 · Intro 风动片首页 (#entrance) -->
+  <section class="entrance" id="entrance" aria-label="Archive entrance">
+    <canvas class="intro-canvas" id="intro-canvas" aria-hidden="true"></canvas>
+  </section>
+
+  <div class="transition" id="transition"></div>
+
+  <!-- 全局 Header · 位置固定不变 -->
+  <header class="site-header" id="site-header">
+    <a href="index.html" class="site-logo" aria-label="Segway-Ninebot">
+      <img class="site-logo__img" src="assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <!-- 一级显示 -->
+    <p class="site-intro-label" id="site-intro-label">Concept Vehicle Archive</p>
+    <!-- 二级起显示 -->
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="index.html" id="nav-catalog">Catalog</a>
+      <a href="#" tabindex="-1" aria-disabled="true">Status</a>
+      <a href="#" tabindex="-1" aria-disabled="true">Access</a>
+    </nav>
+  </header>
+
+  <footer class="site-footer">
+    Copyright © 2024 Segway-Ninebot. All rights reserved.
+  </footer>
+
+  <!-- 二级 · 模块目录 (#page) -->
+  <div class="shell page" id="page">
+    <main class="archive-main">
+      <div class="module-grid" id="module-grid" role="list"></div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/motion.js"></script>
+  <script type="module" src="js/intro-three.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

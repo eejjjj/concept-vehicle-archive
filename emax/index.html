@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>EMAX — Concept Vehicle Archive</title>
+  <link rel="icon" href="../assets/favicon_reverse.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../js/base.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="is-archive" data-page="detail" data-slug="emax">
+
+  <div class="transition" id="transition"></div>
+
+  <div class="emax-intro" id="emax-intro" hidden aria-hidden="true">
+    <video
+      class="emax-intro__video"
+      id="emax-intro-video"
+      playsinline
+      preload="auto"
+      src="../videos/emaxintro.m4v"
+    ></video>
+    <canvas class="emax-intro__pixel" id="emax-intro-pixel" aria-hidden="true"></canvas>
+    <button type="button" class="emax-intro__skip" id="emax-intro-skip">
+      <span class="emax-intro__skip-en">Skip</span>
+      <span class="emax-intro__skip-zh">跳过</span>
+    </button>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <a href="../" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="../assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../emax/" id="nav-emax" class="is-active" aria-current="page" data-scramble>EMAX</a>
+      <a href="../next/" id="nav-next" data-scramble>NEXT</a>
+      <a href="../access/" id="nav-access" data-scramble>Access</a>
+    </nav>
+  </header>
+
+  <div class="detail-shell detail-shell--scroll">
+    <main>
+      <div class="detail-body detail-body--emax cyber-page" id="detail-body">
+
+        <section class="emax-book-stage" id="p1" aria-label="Archive volume">
+          <div class="detail-visual detail-visual--book">
+            <canvas class="detail-visual__canvas" id="book-canvas" tabindex="0" aria-label="Interactive 3D book"></canvas>
+            <p class="book-open-hint" id="book-open-hint">
+              <span class="book-open-hint__full">Drag to rotate · Double-click / double-tap to explore</span>
+              <span class="book-open-hint__short">单指旋转 · 双指张开阅读</span>
+            </p>
+          </div>
+          <div class="book-reader-bar" id="book-reader-bar" hidden>
+            <div class="book-reader-bar__meta">
+              <button type="button" class="book-reader-bar__back" id="book-reader-back">← 3D Book</button>
+              <p class="book-reader-hud" id="book-reader-hud" hidden aria-live="polite"></p>
+            </div>
+            <nav class="book-reader-bar__nav" id="book-reader-nav" aria-label="Chapters"></nav>
+          </div>
+        </section>
+
+        <section class="emax-toc" aria-label="Table of contents">
+          <div class="emax-toc__frame">
+            <div class="emax-toc__body">
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="10">
+                <div class="emax-toc__code" data-scramble>P1</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title" data-scramble>EMAX</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="19">
+                <div class="emax-toc__code" data-scramble>C1</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title" data-scramble>EMERGENCE 涌现</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                  <span class="emax-toc__page" data-scramble>012</span>
+                </div>
+              </div>
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="20">
+                <div class="emax-toc__code" data-scramble>C1 - S1</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title emax-toc__zh" lang="zh" data-scramble>外饰设计</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                  <span class="emax-toc__page" data-scramble>020</span>
+                </div>
+              </div>
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="72">
+                <div class="emax-toc__code" data-scramble>C1 - S2</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title emax-toc__zh" lang="zh" data-scramble>内饰设计</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                  <span class="emax-toc__page" data-scramble>062</span>
+                </div>
+              </div>
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="96">
+                <div class="emax-toc__code" data-scramble>C2</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title emax-toc__zh" lang="zh" data-scramble>2050 交通工具：凌波出行系统</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                  <span class="emax-toc__page" data-scramble>084</span>
+                </div>
+              </div>
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="138">
+                <div class="emax-toc__code" data-scramble>C3</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title emax-toc__zh" lang="zh" data-scramble>视觉开发：现实与意识交织的空间</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                  <span class="emax-toc__page" data-scramble>120</span>
+                </div>
+              </div>
+              <div class="emax-toc__row emax-toc__row--preview" data-toc-page="155">
+                <div class="emax-toc__code" data-scramble>C4</div>
+                <div class="emax-toc__entry">
+                  <div class="emax-toc__text">
+                    <span class="emax-toc__title emax-toc__zh" lang="zh" data-scramble>命题档案：数字永生与未来出行</span>
+                    <div class="emax-toc__preview" aria-hidden="true">
+                      <canvas class="emax-toc__preview-canvas" width="256" height="256"></canvas>
+                    </div>
+                  </div>
+                  <span class="emax-toc__page" data-scramble>146</span>
+                </div>
+              </div>
+            </div>
+            <div class="emax-toc__legend">
+              <p data-scramble>P / C / S IS A STRUCTURAL CODING SYSTEM USED IN THIS ARCHIVE. STRUCTURED TO DOCUMENT THE EVOLUTION OF DESIGN IDEAS.</p>
+              <p data-scramble>P = PROJECT / C = CHAPTER / S = SECTION</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Copyright © 2026 Segway-Ninebot. All rights reserved.
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/book-shared.js"></script>
+  <script src="../js/motion.js?v=2"></script>
+  <script src="../js/archive-effects.js"></script>
+  <script src="../js/emax-bg-crosses.js"></script>
+  <script src="../js/emax-toc-preview.js?v=4"></script>
+  <script src="../js/emax-intro-video.js?v=2"></script>
+  <script type="module" src="../js/book-three.js?v=4"></script>
+  <script src="../js/app.js?v=5"></script>
+</body>
+</html>

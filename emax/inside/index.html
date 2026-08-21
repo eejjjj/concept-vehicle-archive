@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>EMAX Inside — Concept Vehicle Archive</title>
+  <link rel="icon" href="../../assets/favicon_reverse.svg" type="image/svg+xml">
+  <script src="../../js/base.js"></script>
+  <link rel="stylesheet" href="../../css/style.css?v=vidtap1">
+</head>
+<body class="is-archive is-book-reading" data-page="emax-inside" data-slug="emax">
+
+  <div class="transition" id="transition"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="../../" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="../../assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../" id="nav-emax" class="is-active" aria-current="page" data-scramble>EMAX</a>
+      <a href="../../next/" id="nav-next" data-scramble>NEXT</a>
+      <a href="../../access/" id="nav-access" data-scramble>Access</a>
+    </nav>
+  </header>
+
+  <div class="detail-shell detail-shell--scroll">
+    <main>
+      <div class="detail-body detail-body--emax cyber-page" id="detail-body">
+
+        <section class="emax-book-stage" id="p1" aria-label="Archive reader">
+          <div class="detail-visual detail-visual--book">
+            <button type="button" class="book-reader-turn book-reader-turn--prev" id="book-reader-prev" aria-label="Previous page" disabled>←</button>
+            <canvas class="detail-visual__canvas is-reading" id="book-canvas" tabindex="0" aria-label="EMAX page reader"></canvas>
+            <button type="button" class="book-reader-turn book-reader-turn--next" id="book-reader-next" aria-label="Next page">→</button>
+          </div>
+          <div class="book-reader-bar" id="book-reader-bar">
+            <div class="book-reader-bar__meta">
+              <a class="book-reader-bar__back" id="book-reader-back" href="../">← 3D Book</a>
+              <p class="book-reader-hud" id="book-reader-hud" aria-live="polite">001</p>
+            </div>
+            <nav class="book-reader-bar__nav" id="book-reader-nav" aria-label="Chapters"></nav>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Copyright © 2026 Segway-Ninebot. All rights reserved.
+  </footer>
+
+  <script src="../../js/data.js"></script>
+  <script src="../../js/book-shared.js"></script>
+  <script src="../../js/motion.js?v=2"></script>
+  <script src="../../js/archive-effects.js"></script>
+  <script src="../../js/emax-bg-crosses.js"></script>
+  <script type="module" src="../../js/book-inside.js?v=65"></script>
+  <script src="../../js/app.js?v=5"></script>
+</body>
+</html>

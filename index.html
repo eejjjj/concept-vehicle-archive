@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="is-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Concept Vehicle Archive</title>
+  <link rel="icon" href="assets/favicon_reverse.svg" type="image/svg+xml">
+  <script src="js/base.js"></script>
+  <link rel="stylesheet" href="css/style.css?v=sfx38">
+  <script>
+    if (location.protocol === 'file:') {
+      document.addEventListener('DOMContentLoaded', function () {
+        var n = document.createElement('div');
+        n.id = 'file-protocol-warning';
+        n.textContent = '请用本地服务器预览（不能直接双击 HTML）。终端运行: bash preview.sh';
+        document.body.prepend(n);
+      });
+    }
+  </script>
+</head>
+<body class="is-intro">
+
+  <section class="archive-gate" id="archive-gate" aria-label="Archive password">
+    <form class="archive-gate__form" id="archive-gate-form" autocomplete="off">
+      <label class="archive-gate__label" for="archive-gate-input">Password</label>
+      <input
+        class="archive-gate__input"
+        id="archive-gate-input"
+        type="password"
+        name="password"
+        autocomplete="off"
+        spellcheck="false"
+        autocapitalize="off"
+        required
+      >
+      <button class="archive-gate__submit" type="submit">Enter</button>
+      <p class="archive-gate__error" id="archive-gate-error" role="alert" hidden>Access denied</p>
+    </form>
+  </section>
+
+  <section class="entrance" id="entrance" aria-label="Archive entrance">
+    <canvas class="intro-canvas" id="intro-canvas" aria-hidden="true"></canvas>
+    <p class="entrance__touch-hint" aria-hidden="true">TAP TO ENTER</p>
+    <div class="intro-sfx" id="intro-sfx" role="group" aria-label="Sound">
+      <span class="intro-sfx__label">SOUND</span>
+      <button type="button" class="intro-sfx__btn is-active" data-sfx="on" aria-pressed="true">ON</button>
+      <button type="button" class="intro-sfx__btn" data-sfx="off" aria-pressed="false">OFF</button>
+    </div>
+  </section>
+
+  <div class="transition" id="transition"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="./" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <a href="./" class="site-intro-label" id="site-intro-label">Concept Vehicle Archive</a>
+  </header>
+
+  <footer class="site-footer">
+    <span class="site-footer__copy">Copyright © 2026 ninebot.com 纳恩博(北京)科技有限公司 版权所有</span>
+    <span class="site-footer__filings">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备17025273号-4</a>
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?recordCode=11010802032458" target="_blank" rel="noopener noreferrer">京公网安备11010802032458</a>
+    </span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/motion.js?v=2"></script>
+  <script type="module" src="js/intro-three-front.js?v=61"></script>
+  <script src="js/app.js?v=10"></script>
+</body>
+</html>

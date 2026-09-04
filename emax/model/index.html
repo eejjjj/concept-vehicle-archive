@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="is-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>EMAX Model — Concept Vehicle Archive</title>
+  <link rel="icon" href="../../assets/favicon_reverse.svg" type="image/svg+xml">
+  <script src="../../js/base.js?v=mq4"></script>
+  <link rel="stylesheet" href="../../css/style.css?v=sfx135">
+</head>
+<body class="is-archive is-book-reading" data-page="emax-model" data-slug="emax">
+
+  <div class="transition" id="transition"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="../../" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="../../assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../" id="nav-emax" class="is-active" aria-current="page" data-scramble>1/9</a>
+      <a href="../../next/" id="nav-next" data-scramble>2/9</a>
+      <a href="../../info/" id="nav-info" data-scramble>INFO</a>
+    </nav>
+  </header>
+
+  <div class="detail-shell detail-shell--scroll">
+    <main>
+      <div class="detail-body detail-body--emax cyber-page" id="detail-body">
+
+        <section class="emax-book-stage" id="p1" aria-label="EMAX 3D model">
+          <div class="detail-visual detail-visual--book">
+            <div class="book-reader-pane" id="model-pane">
+              <canvas class="detail-visual__canvas is-reading" id="model-canvas" tabindex="0" aria-label="EMAX 3D vehicle"></canvas>
+            </div>
+            <div class="model-zoom" id="model-zoom" role="group" aria-label="Zoom">
+              <button type="button" class="model-zoom__btn" data-zoom="in" aria-label="Zoom in">
+                <svg class="bar-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M8 3.4v9.2M3.4 8h9.2"/></svg>
+              </button>
+              <button type="button" class="model-zoom__btn" data-zoom="out" aria-label="Zoom out">
+                <svg class="bar-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.4" d="M3.4 8h9.2"/></svg>
+              </button>
+            </div>
+            <aside class="model-plaque" aria-hidden="true">
+              <div class="model-plaque__row">
+                <span class="model-plaque__key" data-scramble>PROJECT</span>
+                <span class="model-plaque__val" data-scramble>EMAX</span>
+              </div>
+              <div class="model-plaque__row">
+                <span class="model-plaque__key" data-scramble>CATEGORY</span>
+                <span class="model-plaque__val" data-scramble>1 / 9</span>
+              </div>
+              <div class="model-plaque__row">
+                <span class="model-plaque__key" data-scramble>YEAR</span>
+                <span class="model-plaque__val" data-scramble>2025</span>
+              </div>
+              <div class="model-plaque__row">
+                <span class="model-plaque__key" data-scramble>SITE</span>
+                <span class="model-plaque__val" data-scramble>31°09'N 121°24'E</span>
+              </div>
+            </aside>
+          </div>
+          <div class="book-reader-bar" id="book-reader-bar">
+            <div class="book-reader-bar__meta">
+              <a class="book-reader-bar__back" id="book-reader-back" href="../"><span class="bar-back-caret" aria-hidden="true">← </span>3D Book</a>
+              <div class="model-lights" id="model-lights" role="group" aria-label="Lights">
+                <span class="intro-sfx__label">LIGHTS</span>
+                <button type="button" class="intro-sfx__btn is-active" data-lights="on" aria-pressed="true">ON</button>
+                <button type="button" class="intro-sfx__btn" data-lights="off" aria-pressed="false">OFF</button>
+              </div>
+              <a class="book-reader-bar__back" id="model-pages-open" href="../pages/">OPEN <svg class="bar-icon bar-icon--book" viewBox="0 0 20 12" aria-hidden="true" focusable="false"><rect x="1.4" y="2.3" width="8.1" height="7.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/><rect x="10.5" y="2.3" width="8.1" height="7.4" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-width="1.15" d="M10 2.1v7.8"/><g class="bar-icon__leaf"><rect x="10.5" y="2.3" width="8.1" height="7.4" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/></g></svg></a>
+            </div>
+          </div>
+          <div class="reader-rotate-hint" id="reader-rotate-hint" hidden role="status">
+            <span class="reader-rotate-hint__phone" aria-hidden="true">
+              <span class="reader-rotate-hint__device"></span>
+            </span>
+            <span class="reader-rotate-hint__copy">ROTATE TO LANDSCAPE</span>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span class="site-footer__copy">Copyright © 2026 ninebot.com 纳恩博(北京)科技有限公司 版权所有</span>
+    <span class="site-footer__filings">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备17025273号-4</a>
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?recordCode=11010802032458" target="_blank" rel="noopener noreferrer">京公网安备11010802032458</a>
+    </span>
+  </footer>
+
+  <script src="../../js/data.js"></script>
+  <script src="../../js/book-shared.js"></script>
+  <script src="../../js/motion.js?v=2"></script>
+  <script src="../../js/archive-effects.js?v=3"></script>
+  <script src="../../js/emax-bg-crosses.js?v=3"></script>
+  <script type="module" src="../../js/emax-model.js?v=58"></script>
+  <script src="../../js/app.js?v=14"></script>
+</body>
+</html>

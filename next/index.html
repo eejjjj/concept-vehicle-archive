@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="is-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NEXT — Concept Vehicle Archive</title>
+  <link rel="icon" href="../assets/favicon_reverse.svg" type="image/svg+xml">
+  <script src="../js/base.js?v=mq4"></script>
+  <link rel="stylesheet" href="../css/style.css?v=sfx161">
+</head>
+<body class="is-archive" data-page="detail" data-slug="next">
+
+  <div class="transition" id="transition"></div>
+
+  <header class="site-header" id="site-header">
+    <a href="../" class="site-logo" aria-label="Back to entrance">
+      <img class="site-logo__img" src="../assets/x-logo.svg" alt="" width="398" height="198">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../emax/" id="nav-emax" data-scramble>1/9</a>
+      <a href="../next/" id="nav-next" class="is-active" aria-current="page" data-scramble>2/9</a>
+      <a href="../info/" id="nav-info" data-scramble>INFO</a>
+    </nav>
+  </header>
+
+  <div class="detail-shell detail-shell--scroll">
+    <main>
+      <div class="detail-body detail-body--next cyber-page" id="detail-body">
+
+        <section class="emax-book-stage" id="p2" aria-label="Archive volume">
+          <div class="detail-visual detail-visual--book">
+            <p class="model-loading" aria-live="polite">LOADING<span class="model-loading__dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span></span></p>
+            <canvas class="detail-visual__canvas" id="book-canvas" tabindex="0" aria-label="Interactive 3D book"></canvas>
+            <p class="book-open-hint" id="book-open-hint">
+              <span class="book-open-hint__open book-open-hint__open--click">DOUBLE-CLICK TO OPEN</span>
+              <span class="book-open-hint__open book-open-hint__open--tap">DOUBLE-TAP TO OPEN</span>
+              <span class="book-open-hint__sep"> · </span>
+              HOLD TO VIEW MODEL
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span class="site-footer__copy">Copyright © 2026 ninebot.com 纳恩博(北京)科技有限公司 版权所有</span>
+    <span class="site-footer__filings">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备17025273号-4</a>
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?recordCode=11010802032458" target="_blank" rel="noopener noreferrer">京公网安备11010802032458</a>
+    </span>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/book-shared.js"></script>
+  <script src="../js/motion.js?v=2"></script>
+  <script src="../js/archive-effects.js?v=2"></script>
+  <script src="../js/emax-bg-crosses.js?v=4"></script>
+  <script type="module" src="../js/book-three.js?v=glb202"></script>
+  <script src="../js/app.js?v=16"></script>
+</body>
+</html>
